@@ -1,11 +1,9 @@
 package computadorpedrinho;
 
 public abstract class ServicoMensagensInstantanea {
-	public void enviarMensagem() {
-	}
+	public abstract void enviarMensagem();
 	
-	public void receberMensagem() {
-	}
+	public abstract void receberMensagem();
 	
 	
 }
