@@ -1,4 +1,4 @@
-package computadorpedrinho;
+package apps;
 
 public class FacebookMenssenger extends ServicoMensagensInstantanea {
 		
@@ -7,6 +7,8 @@ public class FacebookMenssenger extends ServicoMensagensInstantanea {
 		valiadarConectadoInternet();
 		
 		System.out.println("Enviar Mensagem Facebook");
+		
+		salvarHistoricoMensagem();
 	}
 	
 	@Override
@@ -19,5 +21,10 @@ public class FacebookMenssenger extends ServicoMensagensInstantanea {
 	protected void valiadarConectadoInternet() {
 		// TODO Auto-generated method stub
 		super.valiadarConectadoInternet();
+	}
+
+	@Override
+	public void salvarHistoricoMensagem() {
+		System.out.println("Salvando Historico de mensagem Facebook");
 	}
 }

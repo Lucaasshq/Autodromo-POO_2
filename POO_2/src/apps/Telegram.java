@@ -1,4 +1,4 @@
-package computadorpedrinho;
+package apps;
 
 public class Telegram extends ServicoMensagensInstantanea{
 	
@@ -6,6 +6,8 @@ public class Telegram extends ServicoMensagensInstantanea{
 	public void enviarMensagem() {
 		valiadarConectadoInternet();
 		System.out.println("Enviar Mensagem Telegram");
+		
+		salvarHistoricoMensagem();
 	}
 	
 	@Override
@@ -17,5 +19,11 @@ public class Telegram extends ServicoMensagensInstantanea{
 	protected void valiadarConectadoInternet() {
 		// TODO Auto-generated method stub
 		super.valiadarConectadoInternet();
+	}
+
+	@Override
+	public void salvarHistoricoMensagem() {
+		System.out.println("Salvando Historico de mesagem Telegram");
+		
 	}
 }
